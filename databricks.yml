@@ -42,8 +42,10 @@ targets:
       # We explicitly deploy to /Workspace/Users/lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com to make sure we only have a single copy.
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com
+      - service_principal_name: cfa9cbe8-d005-41b4-8fcd-13183bcca6a6
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: cfa9cbe8-d005-41b4-8fcd-13183bcca6a6
         
   prod:
     mode: production
