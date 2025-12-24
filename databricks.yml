@@ -57,7 +57,7 @@ targets:
     workspace:
       host: https://adb-650830274584773.13.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com to make sure we only have a single copy.
-      root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/0332b640-0f6d-4571-968e-57f1697518c2/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com
+      - service_principal_name: 0332b640-0f6d-4571-968e-57f1697518c2
         level: CAN_MANAGE
