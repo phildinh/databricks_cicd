@@ -2,6 +2,10 @@ resources:
   pipelines:
     citibike_etl_pipeline:
       name: citibike_etl_pipeline
+      
+      permissions:
+        - service_principal_name: 670c6c53-8a21-4c10-bf37-d7df8170f664
+          level: CAN_MANAGE
 
       catalog: "${var.catalog}"
       schema: default
