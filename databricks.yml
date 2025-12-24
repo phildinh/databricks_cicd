@@ -40,12 +40,10 @@ targets:
     workspace:
       host: https://adb-7405608074410923.3.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com to make sure we only have a single copy.
-      root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/670c6c53-8a21-4c10-bf37-d7df8170f664/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - service_principal_name: cfa9cbe8-d005-41b4-8fcd-13183bcca6a6
+      - service_principal_name: 670c6c53-8a21-4c10-bf37-d7df8170f664
         level: CAN_MANAGE
-    run_as:
-      service_principal_name: cfa9cbe8-d005-41b4-8fcd-13183bcca6a6
         
   prod:
     mode: production
@@ -59,7 +57,7 @@ targets:
     workspace:
       host: https://adb-650830274584773.13.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com to make sure we only have a single copy.
-      root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/0332b640-0f6d-4571-968e-57f1697518c2/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: lavycloset_gmail.com#ext#@lavyclosetgmail.onmicrosoft.com
+      - service_principal_name: 0332b640-0f6d-4571-968e-57f1697518c2
         level: CAN_MANAGE

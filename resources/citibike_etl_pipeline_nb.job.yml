@@ -2,6 +2,13 @@ resources:
   jobs:
     New_Job_Dec_23_2025_11_41_AM:
       name: citibike_etl_pipeline_nb
+      
+      permissions:
+        - service_principal_name: 670c6c53-8a21-4c10-bf37-d7df8170f664
+          level: CAN_MANAGE
+        - service_principal_name: 0332b640-0f6d-4571-968e-57f1697518c2
+          level: CAN_MANAGE
+
       tasks:
 
         - task_key: 01_bronze
