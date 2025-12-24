@@ -6,7 +6,7 @@ resources:
       permissions:
         - service_principal_name: 670c6c53-8a21-4c10-bf37-d7df8170f664
           level: CAN_MANAGE
-        - service_principal_name: 0332b640-0f6d-4571-968e-57f1697518c2
+        - service_principal_name: 04065a1c-4e36-43f9-832a-31c31071252f
           level: CAN_MANAGE
           
       catalog: "${var.catalog}"
